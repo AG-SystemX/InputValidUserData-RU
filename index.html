@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ValidEnter</title>
+</head>
+<body>
+    <div style="max-width: 500px; margin-left: auto; margin-right: auto; padding: 15px;">
+
+        <h1>Введите свои данные</h1>
+    
+        <form id="form" action="#" novalidate>
+          <div class="text-field">
+            <label class="text-field__label" for="firstname">Имя*</label>
+            <input class="text-field__input" type="text" name="firstname" id="firstname" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="lastname">Фамилия*</label>
+            <input class="text-field__input" type="text" name="lastname" id="lastname" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="email">Email*</label>
+            <input class="text-field__input" type="email" name="email" id="email" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="city">Город</label>
+            <input class="text-field__input" type="text" name="city" id="city">
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="number">Возраст*</label>
+            <input class="text-field__input" type="number" name="number" id="number" min="1" max="90" step="1" required>
+            <div class="text-field__message"></div>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
